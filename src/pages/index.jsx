@@ -4,6 +4,7 @@ import styles from './index.module.scss'
 
 import tabs from '../mockData/tabs'
 
+
 const cardInfo = {
     "cards": [
         {   
