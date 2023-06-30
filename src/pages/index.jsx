@@ -181,6 +181,29 @@ const Home = () => {
         setLeftPos(-leftStep)
     }
 
+
+    useEffect(() => {
+        const handleResize = () => {
+            const childrenWidth = scrollableElementRef.current.offsetWidth;
+            const parentWidth = document.documentElement.offsetWidth;
+    
+            if(parentWidth   > childrenWidth + 248) {
+                setLeftleftStep(0);
+            } else {
+                const step = childrenWidth - parentWidth + 248;
+                setLeftleftStep(step);
+            }
+        }
+    
+        // Call the function initially to set the values
+        handleResize();
+    
+        // Add event listener for resize
+        window.addEventListener('resize', handleResize);
+    
+        // Cleanup function to remove the event listener
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     useEffect(()=> {
         const childrenWidth = scrollableElementRef.current.offsetWidth
         const parentWidth = document.documentElement.offsetWidth
