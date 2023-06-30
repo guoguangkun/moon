@@ -63,21 +63,21 @@ const Home = () => {
     },[])
     
     const shapes = [
-        <svg className={styles.baseBackGround} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.baseBackGround} key={1} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 0.000757482L384 6.31236e-05C401.673 2.82614e-05 416 14.3269 416 32.0001L416 163.027C416 168.42 414.637 173.726 412.037 178.451L410.141 181.897C404.656 191.869 404.879 204.003 410.727 213.767L411.451 214.975C414.428 219.944 416 225.628 416 231.42L416 246.366C416 264.039 401.673 278.366 384 278.366L32.0001 278.366C14.327 278.366 0.000171546 264.039 0.000141802 246.366L0.000111939 231.42C8.16747e-05 225.628 1.57219 219.944 4.54876 214.975L5.27291 213.766C11.1214 204.003 11.3445 191.869 5.85879 181.897L3.96288 178.451C1.36321 173.726 8.41792e-05 168.42 8.44154e-05 163.027L9.01517e-05 32.0008C9.09255e-05 14.3277 14.3269 0.000792344 32 0.000757482Z" fill="#131313"/>
         </svg>,
-        <svg  className={styles.baseBackGround} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  className={styles.baseBackGround} key={2} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M31.9997 0L384.001 -1.38868e-06C401.674 -6.2174e-07 416.001 14.3268 416.001 31.9999L416.001 78.1226C416.001 84.5537 414.032 90.8306 410.358 96.1092L409.39 97.5011C402.176 107.866 402.456 121.697 410.083 131.762C413.923 136.829 416.001 143.012 416.001 149.37L416.001 246.001C416.001 263.674 401.674 278.001 384.001 278.001L31.9995 278C14.3264 278 -0.000438855 263.673 -0.00040756 246L-0.0002202 149.369C-0.000189402 143.011 2.07803 136.828 5.91781 131.761C13.545 121.696 13.8249 107.865 6.61132 97.5L5.64263 96.1081C1.96902 90.8295 -0.000186828 84.5527 -0.000217063 78.1216L-0.00036762 32.0001C-0.000427877 14.3269 14.3265 0 31.9997 0Z" fill="#131313"/>
         </svg>,
-        <svg  className={styles.baseBackGround} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  className={styles.baseBackGround} key={3} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.57233e-07 238.001L9.35541e-07 39.9999C1.02238e-06 17.9085 17.9086 -6.26008e-05 40 -6.45321e-05L229.45 -8.10943e-05C238.544 -8.18894e-05 247.367 3.09901 254.464 8.7862L283.573 32.1138C290.67 37.801 299.493 40.9001 308.587 40.9001L376 40.9001C398.091 40.9001 416 58.8086 416 80.9L416 238C416 260.092 398.091 278 376 278L40 278C17.9086 278 -1.56562e-06 260.092 1.57233e-07 238.001Z" fill="#131313"/>
         </svg>,
-        <svg  className={styles.baseBackGround} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg  className={styles.baseBackGround} key={4} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="416" height="278" rx="36" fill="#111111"/>
         </svg>
     ]
     const backGroundLineColor = [
-        <svg className={styles.backColorfullcontrol} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol} key={11} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 0.000269201L384 -0.000425158C401.673 -0.00046002 416 14.3264 416 31.9996L416 163.026C416 168.42 414.637 173.725 412.037 178.451L410.141 181.897C404.656 191.868 404.879 204.003 410.727 213.766L411.451 214.975C414.428 219.944 416 225.627 416 231.419L416 246.365C416 264.038 401.673 278.365 384 278.365L32.0001 278.365C14.327 278.365 0.000171546 264.038 0.000141802 246.365L0.000111939 231.419C8.16747e-05 225.627 1.57219 219.944 4.54876 214.975L5.27291 213.766C11.1214 204.003 11.3445 191.868 5.85879 181.897L3.96288 178.451C1.36321 173.725 8.41792e-05 168.419 8.44154e-05 163.026L9.01517e-05 32.0003C9.09255e-05 14.3272 14.3269 0.000304063 32 0.000269201Z" fill="url(#paint0_linear_2_585)"/>
             <defs>
             <linearGradient id="paint0_linear_2_585" x1="416.051" y1="130.105" x2="0.0506935" y2="130.105" gradientUnits="userSpaceOnUse">
@@ -86,7 +86,7 @@ const Home = () => {
             </linearGradient>
             </defs>
         </svg>,
-        <svg className={styles.backColorfullcontrol} width="417" height="278" viewBox="0 0 417 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol} key={22} width="417" height="278" viewBox="0 0 417 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32.0001 0L384.001 -1.38868e-06C401.674 -6.2174e-07 416.001 14.3268 416.001 31.9999L416.001 78.1226C416.001 84.5537 414.032 90.8306 410.359 96.1092L409.39 97.5011C402.176 107.866 402.456 121.697 410.083 131.762C413.923 136.829 416.001 143.012 416.001 149.37L416.001 246.001C416.001 263.674 401.674 278.001 384.001 278.001L31.9999 278C14.3268 278 -4.21268e-05 263.673 -1.08311e-05 246L0.000176529 149.369C0.000207326 143.011 2.07842 136.828 5.91821 131.761C13.5454 121.696 13.8253 107.865 6.61172 97.5L5.64303 96.1081C1.96942 90.8295 0.0002099 84.5527 0.000179666 78.1216L2.91086e-05 32.0001C-3.11484e-05 14.3269 14.3269 0 32.0001 0Z" fill="url(#paint0_linear_2_488)"/>
             <defs>
             <linearGradient id="paint0_linear_2_488" x1="208" y1="278" x2="208" y2="-7.12466e-06" gradientUnits="userSpaceOnUse">
@@ -96,7 +96,7 @@ const Home = () => {
             </defs>
             </svg>
             ,
-        <svg className={styles.backColorfullcontrol} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol} key={33} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.57233e-07 238.001L9.35541e-07 40.0001C1.02238e-06 17.9087 17.9086 5.94695e-05 40 5.75382e-05L229.45 4.0976e-05C238.544 4.0181e-05 247.367 3.09913 254.464 8.78632L283.573 32.1139C290.67 37.8011 299.493 40.9002 308.587 40.9002L376 40.9002C398.091 40.9002 416 58.8088 416 80.9002L416 238.001C416 260.092 398.091 278.001 376 278.001L40 278.001C17.9086 278.001 -1.56562e-06 260.092 1.57233e-07 238.001Z" fill="url(#paint0_linear_2_522)"/>
             <defs>
             <linearGradient id="paint0_linear_2_522" x1="208" y1="278.001" x2="208" y2="4.28512e-05" gradientUnits="userSpaceOnUse">
@@ -106,7 +106,7 @@ const Home = () => {
             </defs>
         </svg>,
       
-        <svg className={styles.backColorfullcontrol} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol} key={44}  width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="416" height="278" rx="36" fill="url(#paint0_linear_8_766)"/>
             <defs>
             <linearGradient id="paint0_linear_8_766" x1="208" y1="-0.0343091" x2="208" y2="277.966" gradientUnits="userSpaceOnUse">
@@ -118,7 +118,7 @@ const Home = () => {
     ]
 
     const backGroundLineColor1= [
-        <svg className={styles.backColorfullcontrol1} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol1} key={111} width="416" height="279" viewBox="0 0 416 279" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32 0.000269201L384 -0.000425158C401.673 -0.00046002 416 14.3264 416 31.9996L416 163.026C416 168.42 414.637 173.725 412.037 178.451L410.141 181.897C404.656 191.868 404.879 204.003 410.727 213.766L411.451 214.975C414.428 219.944 416 225.627 416 231.419L416 246.365C416 264.038 401.673 278.365 384 278.365L32.0001 278.365C14.327 278.365 0.000171546 264.038 0.000141802 246.365L0.000111939 231.419C8.16747e-05 225.627 1.57219 219.944 4.54876 214.975L5.27291 213.766C11.1214 204.003 11.3445 191.868 5.85879 181.897L3.96288 178.451C1.36321 173.725 8.41792e-05 168.419 8.44154e-05 163.026L9.01517e-05 32.0003C9.09255e-05 14.3272 14.3269 0.000304063 32 0.000269201Z" fill="url(#paint0_linear_2_585)"/>
             <defs>
             <linearGradient id="paint0_linear_2_585" x1="416.051" y1="130.105" x2="0.0506935" y2="130.105" gradientUnits="userSpaceOnUse">
@@ -127,7 +127,7 @@ const Home = () => {
             </linearGradient>
             </defs>
         </svg>,
-        <svg className={styles.backColorfullcontrol1} width="417" height="278" viewBox="0 0 417 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol1} key={222} width="417" height="278" viewBox="0 0 417 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M32.0001 0L384.001 -1.38868e-06C401.674 -6.2174e-07 416.001 14.3268 416.001 31.9999L416.001 78.1226C416.001 84.5537 414.032 90.8306 410.359 96.1092L409.39 97.5011C402.176 107.866 402.456 121.697 410.083 131.762C413.923 136.829 416.001 143.012 416.001 149.37L416.001 246.001C416.001 263.674 401.674 278.001 384.001 278.001L31.9999 278C14.3268 278 -4.21268e-05 263.673 -1.08311e-05 246L0.000176529 149.369C0.000207326 143.011 2.07842 136.828 5.91821 131.761C13.5454 121.696 13.8253 107.865 6.61172 97.5L5.64303 96.1081C1.96942 90.8295 0.0002099 84.5527 0.000179666 78.1216L2.91086e-05 32.0001C-3.11484e-05 14.3269 14.3269 0 32.0001 0Z" fill="url(#paint0_linear_2_488)"/>
             <defs>
             <linearGradient id="paint0_linear_2_488" x1="208" y1="278" x2="208" y2="-7.12466e-06" gradientUnits="userSpaceOnUse">
@@ -137,7 +137,7 @@ const Home = () => {
             </defs>
             </svg>
             ,
-        <svg className={styles.backColorfullcontrol1} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol1} key={333} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.57233e-07 238.001L9.35541e-07 40.0001C1.02238e-06 17.9087 17.9086 5.94695e-05 40 5.75382e-05L229.45 4.0976e-05C238.544 4.0181e-05 247.367 3.09913 254.464 8.78632L283.573 32.1139C290.67 37.8011 299.493 40.9002 308.587 40.9002L376 40.9002C398.091 40.9002 416 58.8088 416 80.9002L416 238.001C416 260.092 398.091 278.001 376 278.001L40 278.001C17.9086 278.001 -1.56562e-06 260.092 1.57233e-07 238.001Z" fill="url(#paint0_linear_2_522)"/>
             <defs>
             <linearGradient id="paint0_linear_2_522" x1="208" y1="278.001" x2="208" y2="4.28512e-05" gradientUnits="userSpaceOnUse">
@@ -147,7 +147,7 @@ const Home = () => {
             </defs>
         </svg>,
       
-        <svg className={styles.backColorfullcontrol1} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.backColorfullcontrol1} key={444} width="416" height="278" viewBox="0 0 416 278" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="416" height="278" rx="36" fill="url(#paint0_linear_8_766)"/>
             <defs>
             <linearGradient id="paint0_linear_8_766" x1="208" y1="-0.0343091" x2="208" y2="277.966" gradientUnits="userSpaceOnUse">
