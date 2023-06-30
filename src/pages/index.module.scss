@@ -1,0 +1,347 @@
+
+.mainPage{
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    padding: 24px 124px 24px;
+    position: relative;
+    .tabWrapper{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 428px;
+        height: 40px;
+        padding-top: 24px;
+        padding-top: 12px;
+
+        .tabNormal{
+            color: #b2b2b2;
+        }
+        .tabSelected{
+            color:  #b2b2b2;
+            font-size: 18px;
+            font-weight: 600
+
+        }
+
+    }
+    .titleWapepr{
+        padding-top: 46px;
+        color: #fff;
+    }
+    .classWrapper{
+        width: 100vw;
+        overflow: scroll;
+        position: absolute;
+        top: 185px;
+        left: 0;
+        padding-left:124px;
+        padding-right: 124px;
+
+        .leftShadow{
+            width: 192px;
+            position: fixed;
+            left: 0 ;
+            z-index: 10;
+
+            height: 342.36px;
+            background: linear-gradient(90deg, #030303 0%, rgba(3, 3, 3, 0.80) 55.46%, rgba(3, 3, 3, 0.00) 100%);
+
+            .arrContent{
+              
+                right: 0;
+                
+            }
+        }
+
+        .rightShadow{
+            z-index: 10;
+            width: 192px;
+            position: fixed;
+            right: 0 ;
+            height: 342.36px;
+            background: linear-gradient(270deg, #030303 0%, rgba(3, 3, 3, 0.80) 55.46%, rgba(3, 3, 3, 0.00) 100%);
+            .arrContent{
+            
+                left: 0;
+            }
+        }
+        .arrContent{
+            position: absolute;
+            top: 184px;
+            .circleWrapper{
+                fill:black;
+                stroke:#303030
+            }
+            &:hover{
+               //  stroke="#676767"
+                .circleWrapper{
+                        stroke:#303030;
+                        fill:#303030;
+
+                }
+            }
+        }
+
+        .arrContent{
+            position: absolute;
+            top: 184px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+        }
+        -ms-overflow-style: none; /* IE 10+ */
+        scrollbar-width: none; /* Firefox */
+        // display: flex;
+        // flex-direction: row;
+        .classScrollWrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            width: 1900px!important;
+            padding-top: 64px;
+            transition: all 0.6s ease-in-out;
+            &::-webkit-scrollbar {
+                display: none; /* Chrome Safari */
+            }
+
+            white-space: nowrap;
+            -ms-overflow-style: none; /* IE 10+ */
+            scrollbar-width: none; /* Firefox */
+            width: auto;
+            .nomalClass{
+                display: inline-block;
+                width: 416px ;
+                height: 278.366px;
+                flex-shrink: 0;
+                position: relative;
+            
+                .contentWrapper{
+                    transition: all 0.2s ease-in-out;
+                    z-index: 4;
+                    width: 416px ;
+                    height: 278.366px;
+                    position: absolute;
+                    border-radius: 30px;
+                    padding:12px 40px;
+                    padding-top: 36px;
+                    .fakeBar{
+                        width: 46px;
+                        height: 4px;
+                        border-radius: 2px;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 5;
+                        margin-bottom: 36px;
+                        .backColorfullcontrol1{
+                            position: absolute;
+                            top: -12px;
+                            left: -40px;
+                        }
+
+                    }
+                    .classTitle{
+                        // color: #fff;
+                        color: var(--text-text-white, #EDEDED);
+                        font-size: 16px;
+                        font-family: NEXT Book;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 100%;
+                    }
+                    .tagWrapper{
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        .classTag{
+                            display: inline-flex;
+                            padding: 4px 8px;
+                            align-items: flex-start;
+                            gap: 10px;
+                            border-radius: 20px;
+                            border: 1px solid var(--text-text-gray, #676767);
+                            color: #fff;
+                            color: var(--color-white, #FFF);
+                            font-size: 9px;
+                            font-family: NEXT Book;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 110%;
+                            margin-right: 20px;
+
+                        }
+                    }
+                    .classContent{
+                        color: var(--text-text-gray, #676767);
+                        font-size: 12px;
+                        font-family: NEXT Book;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 110%;
+                        width: 336px;
+                        white-space: normal;
+                    }
+
+                    .infoConentWrapper{
+                        padding-top: 33px;
+                        .infoConentItem{
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            height: 34px;
+                            border-bottom: 1px solid #282828;
+                            padding-top: 16px;
+                            .infoKey{
+                                color: var(--text-text-gray, #676767);
+                                font-size: 12px;
+                                font-family: NEXT Book;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 110%;
+                            }
+                            .infoItemText{
+                                color: var(--text-text-white, #EDEDED);
+                                text-align: right;
+                                font-size: 14px;
+                                font-family: Neue Machina;
+                                font-style: normal;
+                                font-weight: 300;
+                                line-height: 100%;
+                            }
+
+                        }
+
+                    }
+                    .requiredBottom{
+                        position: absolute;
+                        bottom: 30.87px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        .classRequired{
+                            align-self: center;
+                            color: var(--text-text-white-on-dark, #F2F2F2);
+                            font-size: 12px;
+                            font-family: Neue Machina;
+                            font-style: normal;
+                        
+                            font-weight: 400;
+                            line-height: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-right: 20px;
+                            .classRequiredContent{
+                                padding-left: 8px;
+                                height: 14px;
+                                line-height: 14px;
+                        
+                                display: inline-block;
+                            }
+                        }
+
+                        .classInfoSchedule{
+                            color: var(--status-progress-green, #9EFA13);
+                            text-align: right;
+                            font-size: 10px;
+                            font-family: NEXT Book;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 110%;
+                            padding: 8px 16px;
+                            
+                            height: 40px;
+                            position: absolute;
+                            top: -12px;
+                            left: 190px;
+                            border-radius: 40px;
+                            background: var(--button-card-dark-gray-button, #2A2A2A);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            
+                            .scheduleContent{
+                                // height: 12px;
+                                display: inline-block;
+                                // line-height: 12px;
+                                padding-left: 8px;
+                                
+                                padding-right: 8px;
+                                
+                            }
+                        }
+                    }
+
+                    .adRequired{
+                        align-self: center;
+                        color: var(--text-text-white-on-dark, #F2F2F2);
+                        font-size: 12px;
+                        font-family: Neue Machina;
+                        font-style: normal;
+                        position: absolute;
+                        font-weight: 400;
+                        line-height: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-right: 20px;
+                        left: 220px;
+                        bottom: -3px;
+                        .classRequiredContent{
+                            padding-left: 8px;
+                            height: 14px;
+                            line-height: 14px;
+                            
+                            display: inline-block;
+                        }
+                    }
+
+                    .adTitle{
+                        color: var(--text-text-white, #EDEDED);
+                        font-size: 16px;
+                        font-family: NEXT Book;
+                        font-style: normal;
+                        font-weight: 800;
+                        line-height: 100%;
+                        position: absolute;
+                        top: 180px;
+                    }
+                }
+
+                .baseBackGround{
+                    transition: all 0.2s ease-in-out;
+                    position: absolute;
+                    z-index: 2;
+                }
+                .backColorfullcontrol{
+                    position: absolute;
+                    z-index: 1;
+                }
+                &:hover{
+                    .baseBackGround{
+                        transform: translate3d(4px, -4px, 4px);
+                    }
+                    .contentWrapper{
+                        transform: translate3d(4px, -4px, 4px);
+                    }
+                    .backColorfullcontrol1{
+                        position: absolute;
+                        transform: translate3d(-4px, 4px, 4px);
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}

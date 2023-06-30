@@ -1,0 +1,310 @@
+/**
+ * 全局样式 global.css
+ */
+
+ html,
+ body {
+   width: 100%;
+   height: auto !important;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body,
+ div,
+ dl,
+ dt,
+ dd,
+ ul,
+ ol,
+ li,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ pre,
+ code,
+ form,
+ fieldset,
+ legend,
+ input,
+ button,
+ textarea,
+ p,
+ blockquote,
+ th,
+ td {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ .flex-row {
+   display: flex;
+   flex-direction: row;
+ }
+ 
+ .flex-col {
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ .justify-start {
+   display: flex;
+   justify-content: flex-start;
+ }
+ 
+ .justify-center {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .justify-end {
+   display: flex;
+   justify-content: flex-end;
+ }
+ 
+ .justify-between {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ .items-start {
+   display: flex;
+   align-items: flex-start;
+ }
+ 
+ .items-center {
+   display: flex;
+   align-items: center;
+ }
+ 
+ .items-end {
+   display: flex;
+   align-items: flex-end;
+ }
+ 
+ .course-pointer {
+   cursor: pointer;
+ }
+ 
+ 
+
+ @font-face {
+    font-family: 'Neue Machina';
+    src: url('/static/font/neuemachina-light.otf'); /* IE9 Compat Modes */
+    
+
+  }
+
+//   @font-face {
+//     font-family: 'NEXT Book';
+//  /* IE9 Compat Modes */
+//     src: url('/static/font/neuemachina-regular.otf') /* IE6-IE8 */ 
+    
+//   }
+//   @font-face {
+//     font-family: 'NEXT Book';
+//  /* IE9 Compat Modes */
+//     src: url('/static/font/neuemachina-ultrabold.otf') /* IE6-IE8 */ 
+
+//   }
+ 
+ #root {
+   background-position: 0px 66px;
+   //  background-image: url(./public/userImages/img_27.png);
+   background-size: 100% auto;
+   background-repeat: no-repeat;
+ }
+ 
+ .group6_container #group6_container {
+   width: 100%;
+   justify-content: center;
+ }
+ 
+ body::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+   opacity: 0.2;
+   background: fade(rgba(0, 0, 0, 0), 60%);
+ }
+ 
+ body::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0);
+   border-radius: 0;
+   background: fade(rgba(0, 0, 0, 0), 30%);
+ }
+ 
+ 
+ .ant-empty {
+   width: 100%;
+ }
+ 
+ .loading-icon {
+   transition: transform;
+   animation-name: loading-ratate;
+   animation-duration: 0.5s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
+ }
+ 
+ .document {
+   img {
+     max-width: 100%;
+   }
+ }
+ 
+ .tox-statusbar__branding {
+   display: none;
+ }
+ 
+ @keyframes loading-ratate {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ 
+ .ant-image-error {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ 
+   .ant-image-img {
+     width: 52px !important;
+     height: 52px !important;
+     min-height: 52px !important;
+   }
+ }
+ 
+ 
+ // 兼容css
+ .ant-message.ant-message-top {
+   left: 50%;
+   transform: translateX(-50%);
+   top: 8px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   color: rgba(0, 0, 0, 0.88);
+   font-size: 14px;
+   line-height: 1.5714285714285714;
+   list-style: none;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+   'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+   position: fixed;
+   top: 8px;
+   width: 100%;
+   pointer-events: none;
+   z-index: 1010;
+ 
+   .ant-message-notice {
+     padding: 8px;
+     text-align: center;
+ 
+     .ant-message-notice-content {
+       display: inline-block;
+       padding: 9px 12px;
+       background: #ffffff;
+       border-radius: 8px;
+       box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+       0 9px 28px 8px rgba(0, 0, 0, 0.05);
+       pointer-events: all;
+ 
+       .ant-message-warning > .anticon {
+         color: #faad14;
+       }
+ 
+       .ant-message-success > .anticon {
+         color: #52c41a;
+       }
+ 
+       .ant-message-error > .anticon {
+         color: #ff4d4f;
+       }
+ 
+       .ant-message-info > .anticon {
+         color: #1677ff;
+       }
+ 
+       .ant-message-loading > .anticon {
+         color: #1677ff;
+       }
+ 
+       .anticon {
+         vertical-align: text-bottom;
+         margin-inline-end: 8px;
+         font-size: 16px;
+       }
+     }
+   }
+ 
+   .ant-message-move-up-leave {
+     display: none;
+   }
+ 
+ 
+ }
+ 
+ .ant-input {
+   width: 100%;
+ 
+   &:focus {
+     outline: none;
+   }
+ }
+ 
+ 
+ .slider-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .imageInfo {
+   .ant-carousel {
+     width: 100%;
+     height: 100%;
+ 
+     .slick-slide {
+       display: flex !important;
+       align-items: center;
+       justify-content: center;
+       height: 100vh;
+ 
+       & > div {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100vh;
+       }
+     }
+   }
+ }
+ 
+ .ant-input-textarea-affix-wrapper {
+   background-color: #25262c !important;
+   border: none;
+   color: #e4e4e4;
+ }
+ 
+
+ 
