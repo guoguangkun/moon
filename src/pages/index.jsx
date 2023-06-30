@@ -232,7 +232,7 @@ const Home = () => {
              </div>
             }
            {
-            leftPos == 0 &&  <div className={styles.rightShadow}
+            leftPos == 0 && leftStep && <div className={styles.rightShadow}
                 onClick={()=> {
                         handleCardMoveRight()
                     }}
