@@ -1,4 +1,4 @@
-export default {
+const dataObject = {
     "cards": [
         {   
             "id": 1, 
@@ -118,8 +118,8 @@ export default {
             "content": "",
             "classInfo":[
                 {
-                    key: "time",
-                    value: "36 Hour",
+                    "key": "time",
+                    "value": "36 Hour",
                 }
             ],
             "required": {
@@ -130,3 +130,5 @@ export default {
         }
     ]
 }
+
+export default dataObject
